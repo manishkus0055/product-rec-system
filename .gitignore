@@ -1,0 +1,8 @@
+# Backend ignores
+backend/.env
+backend/__pycache__/
+backend/venv/
+
+# Frontend ignores
+frontend/node_modules/
+frontend/dist/
