@@ -12,7 +12,7 @@ function App() {
 
   const fetchProducts = async () => {
     try {
-      const res = await fetch('http://127.0.0.1:8000/api/products');
+      const res = await fetch('https://product-rec-system.onrender.com/api/products');
       const data = await res.json();
       setProducts(data);
       setIsFiltered(false);
@@ -27,7 +27,7 @@ function App() {
 
     setLoading(true);
     try {
-      const res = await fetch('http://127.0.0.1:8000/api/recommend', {
+      const res = await fetch('https://product-rec-system.onrender.com/api/recommend', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ preference })
